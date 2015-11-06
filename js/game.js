@@ -57,7 +57,7 @@ var Game = {
     },
 
     update : function () {
-        if (delay > 12) {
+        if (delay > 24) {
             //Steuerung der Schlange
             if (cursors.right.isDown && direction != 'left') {
                 direction = 'right';
