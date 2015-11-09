@@ -18,7 +18,7 @@ var Game = {
 
     preload : function() {
         game.load.image('bodyPart', 'assets/images/bodyPart.png');
-        game.load.image('partyDude', 'assets/images/bodyPart.png');                 //TODO asset für einsammelbare personen hinzufügen
+        game.load.image('partyDude', 'assets/images/bodyPart.png');                 //TODO asset fï¿½r einsammelbare personen hinzufï¿½gen
         game.load.spritesheet('snakeHead', 'assets/images/snakeHead.png', 32, 32);
 
     },
@@ -43,7 +43,7 @@ var Game = {
 
         //hud
         score = 0;
-        scoreText = game.add.text(20, 20, "SCORE: " + score, {fontSize: '32px', fill: '#FF0000'})
+        scoreText = game.add.text(20, 20, "SCORE: " + score, {fontSize: '32px', fill: '#FF0000'});
 
 
         cursors = game.input.keyboard.createCursorKeys();
@@ -69,7 +69,7 @@ var Game = {
                 direction = 'down';
             }
 
-            var speed = 16; //TODO entfernen, nur für test hier
+            var speed = 16; //TODO entfernen, nur fï¿½r test hier
 
             oldHeadX = snakeHead.x;
             oldHeadY = snakeHead.y;
@@ -112,7 +112,7 @@ var Game = {
             partyDude.destroy();
             this.spawnPartyDude();
 
-            //neues element vorne in der schlange einfügen
+            //neues element vorne in der schlange einfï¿½gen
             var newPart = game.add.sprite(oldHeadX, oldHeadY, 'bodyPart');
             newPart.anchor.setTo(0.5, 0.5);
             snakeBody.unshift(newPart);
